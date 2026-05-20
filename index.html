@@ -252,7 +252,7 @@ button{cursor:pointer;font-family:inherit;background:none;border:none}
 /* ══════════════════════════════════════
    §02.5  枡とは
 ══════════════════════════════════════ */
-#masu-intro{background:var(--warm);padding:120px 0}
+#masu-intro{background:var(--warm);padding:120px 0 0}
 .mi-inner{max-width:720px;margin:0 auto;text-align:center;padding:0 40px}
 .mi-ttl{
   font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.2rem);
@@ -267,7 +267,9 @@ button{cursor:pointer;font-family:inherit;background:none;border:none}
   line-height:2.5;margin-bottom:0;
 }
 .mi-body + .mi-body{margin-top:28px}
-@media(max-width:600px){#masu-intro{padding:80px 0}.mi-inner{padding:0 24px}}
+.mi-img{width:100%;margin-top:80px;overflow:hidden;line-height:0}
+.mi-img img{width:100%;height:clamp(320px,55vw,680px);object-fit:cover;object-position:center 40%}
+@media(max-width:600px){#masu-intro{padding:80px 0 0}.mi-inner{padding:0 24px}.mi-img{margin-top:56px}}
 
 /* ══════════════════════════════════════
    §03  FOMUS DOMAINS
@@ -646,8 +648,12 @@ footer{}
   <div class="mi-inner rv">
     <h2 class="mi-ttl">枡とは</h2>
     <div class="mi-bar"></div>
-    <p class="mi-body">枡は、測る道具から、縁起物や祝いの器として、<br>日本の暮らしと節目に寄り添ってきました。</p>
-    <p class="mi-body">FOMUSは、その枡が持つ意味を、<br>テクノロジーとコミュニティの力で<br>文化と世界をつなぐ「コミュニケーションツール」へと<br>意味を変えてきました。</p>
+    <p class="mi-body">枡（ます）は、奈良時代から続く日本の伝統的な計量器です。<br>ヒノキや吉野杉などの国産木材を、釘を一切使わず組み上げた<br>職人の技と、木の香りが宿る器。</p>
+    <p class="mi-body">もともとは米や酒を量る道具でしたが、<br>やがて縁起物・祝いの器として、<br>日本人の暮らしと節目に深く寄り添ってきました。</p>
+    <p class="mi-body">FOMUSは、その枡が持つ意味を、<br>テクノロジーとコミュニティの力で<br>文化と世界をつなぐ「コミュニケーションツール」へと<br>進化させています。</p>
+  </div>
+  <div class="mi-img rv">
+    <img src="枡とは.png" alt="FOMUSの枡 — 国産ヒノキ">
   </div>
 </section>
 
